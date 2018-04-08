@@ -1,0 +1,6 @@
+{
+  "hooks": {
+    "commit-msg": "commitlint -x @commitlint/config-conventional -e $GIT_PARAMS",
+    "pre-push": "yarn run checkPackage"
+  }
+}

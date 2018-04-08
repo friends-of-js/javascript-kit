@@ -1,0 +1,9 @@
+{
+  "extends": "../tslint.json",
+  "rules": {
+    "missing-jsdoc": false,
+    "object-literal-sort-keys": false,
+    "export-name": [true, "default"],
+    "no-relative-imports": false
+  }
+}

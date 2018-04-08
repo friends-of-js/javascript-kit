@@ -1,0 +1,11 @@
+version: 2
+plugins:
+  fixme:
+    enabled: true
+  markdownlint:
+    enabled: true
+  nodesecurity:
+    enabled: true
+exclude_patterns:
+  - build/**/*
+  - spec/**/*

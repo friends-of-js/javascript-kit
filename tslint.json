@@ -1,0 +1,7 @@
+{
+  "extends": "@friends-of-js/tslint-configs/strict",
+  "rules": {
+    "missing-jsdoc": false,
+    "no-console": false
+  }
+}

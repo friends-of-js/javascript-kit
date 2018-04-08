@@ -1,0 +1,8 @@
+<% if (language === 'TypeScript') { -%>
+--require ts-node/register
+--require tsconfig-paths/register
+<% } else if (useBuildTools && language === 'JavaScript') { -%>
+--require babel-register
+<% } -%>
+--reporter dot
+./spec/**/*.spec.<%= extension %>

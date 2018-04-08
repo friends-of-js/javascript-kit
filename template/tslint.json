@@ -1,0 +1,3 @@
+{
+  "extends": "@friends-of-js/tslint-configs/<%= tslintConfigType %>"
+}

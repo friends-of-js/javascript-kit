@@ -1,0 +1,19 @@
+{
+  "extends": "./node_modules/@friends-of-js/typescript-configs/strict",
+  "compilerOptions": {
+    "target": "esnext",
+    "baseUrl": "./",
+    "paths": {
+      "sao": ["node_modules/sao"],
+      "@friends-of-js/javascript-kit": [
+        "src"
+      ],
+      "@friends-of-js/javascript-kit/cliMethods": [
+        "src/cliMethods.ts"
+      ],
+      "@friends-of-js/javascript-kit/spec": [
+        "spec/"
+      ]
+    }
+  }
+}

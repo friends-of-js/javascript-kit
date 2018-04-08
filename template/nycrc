@@ -1,0 +1,33 @@
+{
+  "check-coverage": true,
+  "per-file": true,
+  "lines": 90,
+  "statements": 90,
+  "functions": 90,
+  "branches": 90,
+  "extension": [
+    ".<%= extension %>",
+    ".<%= extension %>x"
+  ],
+<% if (!useBuildTools || language === this.TYPESCRIPT) { -%>
+  "include": [
+    "src/**/*"
+  ],
+<% } -%>
+  "exclude": [
+<% if (language === this.TYPESCRIPT) { -%>
+    "**/*.d.ts",
+<% } -%>
+    "**/*.spec.*"
+  ],
+  "reporter": [
+    "text",
+    "html",
+    "lcov"
+  ],
+<% if (useBuildTools && language === this.JAVASCRIPT) { -%>
+  "sourceMap": false,
+  "instrument": false,
+<% } -%>
+  "all": true
+}

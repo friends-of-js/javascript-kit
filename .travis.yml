@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - 9
+  - 8
+
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
+script:
+  - yarn install
+  - yarn run lint
+  - yarn run test.with.coverage
+  - yarn run build
+
+after_success:
+  - yarn run coverage.codecov
+  - ./cc-test-reporter after-build --coverage-input-type lcov --exit-code $TRAVIS_TEST_RESULT
+
+cache:
+  yarn: true

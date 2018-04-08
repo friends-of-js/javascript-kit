@@ -1,0 +1,116 @@
+{
+  "name": "@friends-of-js/javascript-kit",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "0.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/friends-of-js/javascript-kit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/friends-of-js/javascript-kit"
+  },
+  "description": "JavaScript and TypeScript module generator",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "module",
+    "scaffolding"
+  ],
+  "bugs": {
+    "url": "https://github.com/friends-of-js/javascript-kit/issues",
+    "email": "romanov@noldor.pro"
+  },
+  "author": "Dmitriy Romanov <romanov@noldor.pro> (https://github.com/friends-of-js)",
+  "contributors": [
+    "Dmitriy Romanov <romanov@noldor.pro> (https://github.com/friends-of-js)"
+  ],
+  "main": "lib/index.js",
+  "bin": "lib/cli.js",
+  "scripts": {
+    "build": "yarn run build.module",
+    "build.module": "yarn run build.module.commonjs",
+    "build.module.commonjs": "NODE_ENV=production tsc --project build/module/tsconfig.commonjs.json",
+    "lint": "tslint -p tsconfig.json --format codeFrame",
+    "fix": "tslint -p tsconfig.json --fix",
+    "test": "yarn run test.module",
+    "test.module": "NODE_ENV=test mocha --opts ./spec/mocha.opts",
+    "test.with.coverage": "NODE_ENV=test nyc yarn run test && nyc report --reporter=text-lcov > coverage/lcov.info",
+    "test.watch": "NODE_ENV=test mocha --opts ./spec/mocha.opts --watch --watch-dirs ./spec/ --watch-extensions ts,tsx",
+    "coverage": "yarn run coverage.generate && yarn run coverage.show",
+    "coverage.generate": "NODE_ENV=test nyc yarn run test.module",
+    "coverage.show": "opn coverage/index.html",
+    "coverage.codecov": "codecov -f 'coverage/lcov.info'",
+    "docs": "yarn run docs.html && yarn run docs.json",
+    "docs.html": "typedoc src --mode modules --target es6 --mode file --theme default --out docs",
+    "docs.json": "typedoc src --mode file --json docs/docs.json",
+    "docs.show": "yarn run docs && opn docs/index.html",
+    "docs.publish": "yarn run docs && gh-pages -d docs",
+    "release.major": "release major && yarn publish && yarn run docs.publish",
+    "release.minor": "release minor && yarn publish && yarn run docs.publish",
+    "release.patch": "release patch && yarn publish && yarn run docs.publish",
+    "release.pre": "release pre && yarn publish",
+    "checkPackage": "yarn run build && yarn run lint && yarn run test",
+    "commit": "git-cz",
+    "prepublishOnly": "yarn run checkPackage",
+    "prerelease.major": "yarn run checkPackage",
+    "prerelease.minor": "yarn run checkPackage",
+    "prerelease.patch": "yarn run checkPackage",
+    "prerelease.pre": "yarn run checkPackage",
+    "clean": "rm -rf ./lib ./docs ./coverage ./.nyc_output",
+    "createLink": "yarn link --silent > /dev/null 2>&1 && yarn link --silent $npm_package_name"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "camelcase": "^5.0.0",
+    "chalk": "^2.3.2",
+    "inquirer": "^5.2.0",
+    "minimist": "^1.2.0",
+    "sao": "^0.22.15",
+    "spdx-license-list": "^4.0.0",
+    "superb": "^2.0.0",
+    "tslib": "^1.9.0",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^6.1.3",
+    "@commitlint/config-conventional": "^6.1.3",
+    "@friends-of-js/tslint-configs": "^1.0.3",
+    "@friends-of-js/typescript-configs": "^1.0.5",
+    "@types/camelcase": "^4.1.0",
+    "@types/chai": "^4.1.2",
+    "@types/chai-as-promised": "^7.1.0",
+    "@types/inquirer": "^0.0.41",
+    "@types/mocha": "^5.0.0",
+    "@types/mockery": "^1.4.29",
+    "@types/node": "^9.6.2",
+    "@types/parse-git-config": "^1.1.0",
+    "@types/sinon": "^4.3.1",
+    "@types/sinon-chai": "^2.7.29",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "codecov": "^3.0.0",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
+    "gh-pages": "^1.1.0",
+    "git-config-path": "^1.0.1",
+    "husky": "^0.15.0-rc.13",
+    "mocha": "^5.0.5",
+    "mockery": "^2.1.0",
+    "nyc": "^11.6.0",
+    "opn-cli": "^3.1.0",
+    "parse-git-config": "^2.0.1",
+    "release": "^3.1.7",
+    "sinon": "^4.5.0",
+    "sinon-chai": "^3.0.0",
+    "ts-node": "^5.0.1",
+    "tsconfig-paths": "^3.2.0",
+    "tslint": "^5.9.1",
+    "typedoc": "^0.11.1",
+    "typescript": "^2.8.1"
+  }
+}

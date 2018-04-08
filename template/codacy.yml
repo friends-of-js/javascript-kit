@@ -1,0 +1,12 @@
+exclude_paths:
+  - build/**/*
+  - spec/**/*.<%= extension %>
+engines:
+  coverage:
+    enabled: true
+  JacksonLinter:
+    enabled: true
+  duplication:
+    enabled: true
+  metrics:
+    enabled: true

@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "rootDir": "../../",
+    "sourceMap": true,
+    "inlineSourceMap": false
+  },
+  "include": [
+    "../../src"
+  ],
+  "exclude": [
+    "../../spec/**/*"
+  ]
+}

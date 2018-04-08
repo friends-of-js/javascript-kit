@@ -1,0 +1,13 @@
+{
+  "root": true,
+  "extends": "standard",
+  "env": {
+<% if (platforms.includes(this.BROWSER_PLATFORM)) { -%>
+    "browser": true,
+<% } -%>
+<% if (platforms.includes(this.NODE_PLATFORM)) { -%>
+    "node": true,
+<% } -%>
+    "mocha": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "extends": "./node_modules/@friends-of-js/typescript-configs/<%= tsConfigType %>",
+  "compilerOptions": {
+    "target": "<%= tsTarget %>",
+    "baseUrl": "./",
+    "paths": {
+      "<%= name %>": [
+        "src/index.ts"
+      ],
+      "<%= name %>/spec": [
+        "spec/index.ts"
+      ]
+    }
+  }
+}

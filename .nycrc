@@ -1,0 +1,26 @@
+{
+  "check-coverage": true,
+  "per-file": true,
+  "lines": 90,
+  "statements": 90,
+  "functions": 90,
+  "branches": 90,
+  "extension": [
+    ".ts",
+    ".tsx"
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "**/*.d.ts",
+    "**/*.spec.*",
+    "src/cli.ts"
+  ],
+  "reporter": [
+    "text",
+    "html",
+    "lcov"
+  ],
+  "all": true
+}

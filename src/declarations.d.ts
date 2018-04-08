@@ -1,0 +1,5 @@
+declare module 'spdx-license-list/*'
+declare module 'validate-npm-package-name'
+declare module 'sao'
+declare module 'minimist'
+declare module 'git-config-path'
