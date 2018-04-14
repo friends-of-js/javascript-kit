@@ -6,7 +6,7 @@
 [![codecov](https://codecov.io/gh/friends-of-js/javascript-kit/branch/master/graph/badge.svg)](https://codecov.io/gh/friends-of-js/javascript-kit)
 [![license](https://img.shields.io/github/license/friends-of-js/javascript-kit.svg)](LICENSE)
 
-![Preview](https://s31vla.storage.yandex.net/rdisk/5afb860bd756882655be84f4e0c8f06a5b46d7b13dd33de46772e4fc0303c0df/5ad22ffc/WQE6_438HcyEeCp6WXRb_V8Rcrt0ki1iNnFvpE_PFrz-YALI3mbhXKgBIFFUMyykmrXdVnFjo6ScW1Btm2vzZw==?uid=0&filename=javascript-kit.gif&disposition=inline&hash=&limit=0&content_type=image%2Fgif&fsize=1741216&hid=33fb02433cfb68468a0fafae16524857&media_type=image&tknv=v2&etag=614a4432598c659c7004c9a55216f473&rtoken=QIK7qZFqk9n3&force_default=no&ycrid=na-4b371e84e3c0afe96487b91a83d9cea5-downloader3h&ts=569d1b4aef700&s=bc439ed37d6bb5c0bd01023e63f86fba88f2c77f49b9f3ae1a21c42ef7ff0c81&pb=U2FsdGVkX1-h5x2O0TBw6oySe0GSKBjJ-Lin4qTxy7zPLZQeWcDc5fukrNGzf_MaJ3gENqYxG7aSAE4HViQ0qYcgG9qvbbd9xyCsqQrI2Ys)
+![Preview](https://cdn.rawgit.com/friends-of-js/javascript-kit/654cea16/resources/javascript-kit.gif)
 
 ## Install
 
