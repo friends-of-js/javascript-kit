@@ -49,21 +49,21 @@ bundle-analysis
 /spec
 /src
 /resources
-Makefile
-.huskyrc.json
-.editorconfig
-.gitignore
-.travis.yml
-.codeclimate.yml
-.codecov.yml
-.codacy.yml
-.nycrc
-.babelrc
-.esdoc.json
-.eslintrc
-tsconfig.json
-tslint.json
-mocha.opts
+/Makefile
+/.huskyrc.json
+/.editorconfig
+/.gitignore
+/.travis.yml
+/.codeclimate.yml
+/.codecov.yml
+/.codacy.yml
+/.nycrc
+/.babelrc
+/.esdoc.json
+/.eslintrc
+/tsconfig.json
+/tslint.json
+/mocha.opts
 
 # Any archive
 *.tgz
