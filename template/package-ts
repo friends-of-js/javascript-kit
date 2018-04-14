@@ -149,7 +149,7 @@
     "@types/lodash.camelcase": "^4.3.3",
 <% } -%>
     "@types/mocha": "^5.0.0",
-    "@types/node": "^9.6.2",
+    "@types/node": "^9.6.5",
 <% if (platforms.includes(this.BROWSER_PLATFORM)) { -%>
     "@types/tapable": "^1.0.1",
     "@types/webpack": "^4.1.3",
@@ -184,11 +184,11 @@
 <% } -%>
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.1.0",
-    "husky": "^0.15.0-rc.13",
+    "husky": "^1.0.0-rc.1",
 <% if (platforms.includes(this.BROWSER_PLATFORM)) { -%>
     "lodash.camelcase": "^4.3.0",
 <% } -%>
-    "mocha": "^5.0.5",
+    "mocha": "^5.1.0",
     "nyc": "^11.6.0",
     "opn-cli": "^3.1.0",
     "release": "^3.1.7",
