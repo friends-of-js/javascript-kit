@@ -2297,9 +2297,9 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-husky@^0.15.0-rc.13:
-  version "0.15.0-rc.13"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-0.15.0-rc.13.tgz#a27550b7b51d2f472e284b48fc9257a6d6b3f681"
+husky@^1.0.0-rc.1:
+  version "1.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-1.0.0-rc.1.tgz#f7c54541ac56e3bd2d0b10752ef4ff62a4a03262"
   dependencies:
     cosmiconfig "^4.0.0"
     execa "^0.9.0"
@@ -2308,7 +2308,7 @@ husky@^0.15.0-rc.13:
     pupa "^1.0.0"
     read-pkg "^3.0.0"
     run-node "^0.2.0"
-    slash "^1.0.0"
+    slash "^2.0.0"
 
 iconv-lite@^0.4.17:
   version "0.4.21"
@@ -4315,9 +4315,9 @@ sinon@^4.5.0:
     supports-color "^5.1.0"
     type-detect "^4.0.5"
 
-slash@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
+slash@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/slash/-/slash-2.0.0.tgz#de552851a1759df3a8f206535442f5ec4ddeab44"
 
 slide@^1.1.5:
   version "1.1.6"

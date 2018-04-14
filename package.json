@@ -98,7 +98,7 @@
     "cz-conventional-changelog": "^2.1.0",
     "gh-pages": "^1.1.0",
     "git-config-path": "^1.0.1",
-    "husky": "^0.15.0-rc.13",
+    "husky": "^1.0.0-rc.1",
     "mocha": "^5.0.5",
     "mockery": "^2.1.0",
     "nyc": "^11.6.0",
