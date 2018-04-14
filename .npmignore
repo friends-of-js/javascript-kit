@@ -48,6 +48,7 @@ bundle-analysis
 /build
 /spec
 /src
+/resources
 Makefile
 .huskyrc.json
 .editorconfig
