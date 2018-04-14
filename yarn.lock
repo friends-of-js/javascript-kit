@@ -141,8 +141,8 @@
     tslib "^1.8.1"
 
 "@friends-of-js/tslint-configs@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@friends-of-js/tslint-configs/-/tslint-configs-1.0.3.tgz#649d43f15b8f1a4c04aba9b326778707459265ee"
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@friends-of-js/tslint-configs/-/tslint-configs-1.0.4.tgz#cf6c022022449c5d11873e11253ec29f242131f4"
   dependencies:
     tslint-clean-code "^0.2.5"
     tslint-consistent-codestyle "^1.12.0"
