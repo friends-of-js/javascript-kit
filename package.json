@@ -94,7 +94,7 @@
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "codecov": "^3.0.0",
-    "commitizen": "^2.9.6",
+    "commitizen": "^3.0.7",
     "cz-conventional-changelog": "^2.1.0",
     "gh-pages": "^1.1.0",
     "git-config-path": "^1.0.1",
