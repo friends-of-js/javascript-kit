@@ -99,7 +99,7 @@
     "gh-pages": "^1.1.0",
     "git-config-path": "^1.0.1",
     "husky": "^1.0.0-rc.1",
-    "mocha": "^5.1.0",
+    "mocha": "^7.0.0",
     "mockery": "^2.1.0",
     "nyc": "^11.6.0",
     "opn-cli": "^3.1.0",
