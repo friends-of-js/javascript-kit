@@ -89,7 +89,7 @@
     "@types/mockery": "^1.4.29",
     "@types/node": "^9.6.2",
     "@types/parse-git-config": "^1.1.0",
-    "@types/sinon": "^4.3.1",
+    "@types/sinon": "^9.0.0",
     "@types/sinon-chai": "^2.7.29",
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
