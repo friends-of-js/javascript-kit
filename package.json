@@ -72,7 +72,7 @@
     "minimist": "^1.2.0",
     "sao": "^0.22.17",
     "spdx-license-list": "^4.0.0",
-    "superb": "^2.0.0",
+    "superb": "^3.0.0",
     "tslib": "^1.9.0",
     "validate-npm-package-name": "^3.0.0"
   },
