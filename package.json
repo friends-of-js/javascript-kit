@@ -69,7 +69,7 @@
     "camelcase": "^5.0.0",
     "chalk": "^2.3.2",
     "inquirer": "^5.2.0",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.6",
     "sao": "^0.22.17",
     "spdx-license-list": "^4.0.0",
     "superb": "^2.0.0",
